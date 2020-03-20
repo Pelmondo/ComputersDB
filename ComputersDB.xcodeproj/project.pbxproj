@@ -22,7 +22,19 @@
 		5618C33A24244DB800AAD6A6 /* ComputerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618C33924244DB800AAD6A6 /* ComputerCard.swift */; };
 		5618C3402424598D00AAD6A6 /* ComputerCardLabelViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618C33F2424598D00AAD6A6 /* ComputerCardLabelViews.swift */; };
 		5618C3422424963F00AAD6A6 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618C3412424963F00AAD6A6 /* ReachabilityService.swift */; };
+		5618C34A24249A8200AAD6A6 /* ComputersDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618C34924249A8200AAD6A6 /* ComputersDBTests.swift */; };
+		5618C35224249BAD00AAD6A6 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618C35124249BAD00AAD6A6 /* MainPresenterTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5618C34C24249A8200AAD6A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5618C3062423E48700AAD6A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5618C30D2423E48700AAD6A6;
+			remoteInfo = ComputersDB;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5618C30E2423E48700AAD6A6 /* ComputersDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComputersDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,10 +54,21 @@
 		5618C33924244DB800AAD6A6 /* ComputerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerCard.swift; sourceTree = "<group>"; };
 		5618C33F2424598D00AAD6A6 /* ComputerCardLabelViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerCardLabelViews.swift; sourceTree = "<group>"; };
 		5618C3412424963F00AAD6A6 /* ReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
+		5618C34724249A8200AAD6A6 /* ComputersDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComputersDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5618C34924249A8200AAD6A6 /* ComputersDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputersDBTests.swift; sourceTree = "<group>"; };
+		5618C34B24249A8200AAD6A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5618C35124249BAD00AAD6A6 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5618C30B2423E48700AAD6A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618C34424249A8200AAD6A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				5618C3102423E48700AAD6A6 /* ComputersDB */,
+				5618C34824249A8200AAD6A6 /* ComputersDBTests */,
 				5618C30F2423E48700AAD6A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				5618C30E2423E48700AAD6A6 /* ComputersDB.app */,
+				5618C34724249A8200AAD6A6 /* ComputersDBTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +191,16 @@
 			path = ComputerCardModule;
 			sourceTree = "<group>";
 		};
+		5618C34824249A8200AAD6A6 /* ComputersDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				5618C34924249A8200AAD6A6 /* ComputersDBTests.swift */,
+				5618C35124249BAD00AAD6A6 /* MainPresenterTest.swift */,
+				5618C34B24249A8200AAD6A6 /* Info.plist */,
+			);
+			path = ComputersDBTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +221,24 @@
 			productReference = 5618C30E2423E48700AAD6A6 /* ComputersDB.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5618C34624249A8200AAD6A6 /* ComputersDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5618C34E24249A8200AAD6A6 /* Build configuration list for PBXNativeTarget "ComputersDBTests" */;
+			buildPhases = (
+				5618C34324249A8200AAD6A6 /* Sources */,
+				5618C34424249A8200AAD6A6 /* Frameworks */,
+				5618C34524249A8200AAD6A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5618C34D24249A8200AAD6A6 /* PBXTargetDependency */,
+			);
+			name = ComputersDBTests;
+			productName = ComputersDBTests;
+			productReference = 5618C34724249A8200AAD6A6 /* ComputersDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,6 +251,10 @@
 				TargetAttributes = {
 					5618C30D2423E48700AAD6A6 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					5618C34624249A8200AAD6A6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5618C30D2423E48700AAD6A6;
 					};
 				};
 			};
@@ -215,6 +272,7 @@
 			projectRoot = "";
 			targets = (
 				5618C30D2423E48700AAD6A6 /* ComputersDB */,
+				5618C34624249A8200AAD6A6 /* ComputersDBTests */,
 			);
 		};
 /* End PBXProject section */
@@ -226,6 +284,13 @@
 			files = (
 				5618C31E2423E48900AAD6A6 /* LaunchScreen.storyboard in Resources */,
 				5618C31B2423E48900AAD6A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618C34524249A8200AAD6A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +317,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5618C34324249A8200AAD6A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5618C34A24249A8200AAD6A6 /* ComputersDBTests.swift in Sources */,
+				5618C35224249BAD00AAD6A6 /* MainPresenterTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5618C34D24249A8200AAD6A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5618C30D2423E48700AAD6A6 /* ComputersDB */;
+			targetProxy = 5618C34C24249A8200AAD6A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5618C31C2423E48900AAD6A6 /* LaunchScreen.storyboard */ = {
@@ -416,6 +498,46 @@
 			};
 			name = Release;
 		};
+		5618C34F24249A8200AAD6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KMJG654R42;
+				INFOPLIST_FILE = ComputersDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.PelmondoSoft.ComputersDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComputersDB.app/ComputersDB";
+			};
+			name = Debug;
+		};
+		5618C35024249A8200AAD6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KMJG654R42;
+				INFOPLIST_FILE = ComputersDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.PelmondoSoft.ComputersDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComputersDB.app/ComputersDB";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -433,6 +555,15 @@
 			buildConfigurations = (
 				5618C3232423E48900AAD6A6 /* Debug */,
 				5618C3242423E48900AAD6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5618C34E24249A8200AAD6A6 /* Build configuration list for PBXNativeTarget "ComputersDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5618C34F24249A8200AAD6A6 /* Debug */,
+				5618C35024249A8200AAD6A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
