@@ -17,9 +17,11 @@ protocol MainViewProtocol: class {
 protocol MainViewPresenterProtocol: class {
     init(view: MainViewProtocol, networkService: NetworkServiceProtocol)
     func getComputers()
+    func getSerchedComputers(computerName: String?)
     var computers: Computers? { get set }
     var page: Int { get set }
-    var items: [Items] {get set}
+    var items: [Items] { get set }
+    var searchedItems: [Items] { get set }
 }
 
 class MainPresenter: MainViewPresenterProtocol {
@@ -28,11 +30,27 @@ class MainPresenter: MainViewPresenterProtocol {
     var computers: Computers?
     var page: Int = 0
     var items = [Items]()
+    var searchedItems = [Items]()
     
     required init(view: MainViewProtocol, networkService: NetworkServiceProtocol) {
         self.view = view
         self.networkService = networkService
         getComputers()
+    }
+    
+    func getSerchedComputers(computerName: String?) {
+        networkService.getSearchedComp(computerName: computerName) {[weak self] result in
+            guard let self = self else { return }
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success(let computers):
+                        self.items = computers!.items
+                        self.view?.sucsses()
+                    case .failure(let error):
+                        self.view?.failure(error)
+                       }
+                   }
+               }
     }
     
     func getComputers() {

@@ -29,6 +29,7 @@ class MainViewController: UIViewController {
     
     var presenter: MainViewPresenterProtocol!
     private let cellId = "Cell"
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,8 +91,22 @@ extension MainViewController: MainViewProtocol {
 }
 
 extension MainViewController: UISearchBarDelegate {
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        <#code#>
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.presenter.getSerchedComputers(computerName: searchBar.text)
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        self.searchBar.showsCancelButton = true
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.presenter.page = 0
+        self.presenter.items = [Items]()
+        self.presenter.getComputers()
+        self.searchBar.text = ""
+        self.searchBar.showsCancelButton = false
+        tableView.reloadData()
+        self.searchBar.resignFirstResponder()
     }
 }
 

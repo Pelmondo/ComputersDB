@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol ComputerCardViewProtocol: class {
-    func sucsses() // think about realisation  i guess this is logick
+    func sucsses() 
     func failure(_ error: Error)
     func getLinks()
     var imageGet: UIImage? { get set }
