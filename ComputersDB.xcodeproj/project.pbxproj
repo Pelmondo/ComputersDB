@@ -21,6 +21,7 @@
 		5618C33824244D7300AAD6A6 /* ComputerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618C33724244D7300AAD6A6 /* ComputerCardView.swift */; };
 		5618C33A24244DB800AAD6A6 /* ComputerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618C33924244DB800AAD6A6 /* ComputerCard.swift */; };
 		5618C3402424598D00AAD6A6 /* ComputerCardLabelViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618C33F2424598D00AAD6A6 /* ComputerCardLabelViews.swift */; };
+		5618C3422424963F00AAD6A6 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618C3412424963F00AAD6A6 /* ReachabilityService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		5618C33724244D7300AAD6A6 /* ComputerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerCardView.swift; sourceTree = "<group>"; };
 		5618C33924244DB800AAD6A6 /* ComputerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerCard.swift; sourceTree = "<group>"; };
 		5618C33F2424598D00AAD6A6 /* ComputerCardLabelViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerCardLabelViews.swift; sourceTree = "<group>"; };
+		5618C3412424963F00AAD6A6 /* ReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				5618C32C2423E57100AAD6A6 /* NetworkService.swift */,
+				5618C3412424963F00AAD6A6 /* ReachabilityService.swift */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				5618C3162423E48700AAD6A6 /* MainViewController.swift in Sources */,
 				5618C3332424421F00AAD6A6 /* ComputerCell.swift in Sources */,
 				5618C3312423E8B500AAD6A6 /* ModuleBuilder.swift in Sources */,
+				5618C3422424963F00AAD6A6 /* ReachabilityService.swift in Sources */,
 				5618C3122423E48700AAD6A6 /* AppDelegate.swift in Sources */,
 				5618C3402424598D00AAD6A6 /* ComputerCardLabelViews.swift in Sources */,
 				5618C3142423E48700AAD6A6 /* SceneDelegate.swift in Sources */,

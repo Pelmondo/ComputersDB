@@ -12,11 +12,13 @@ import UIKit
 protocol MainViewProtocol: class {
     func sucsses() // think about realisation  i guess this is logick
     func failure(_ error: Error)
+    func notConnection()
 }
 
 protocol MainViewPresenterProtocol: class {
     init(view: MainViewProtocol, networkService: NetworkServiceProtocol)
     func getComputers()
+    func conectionCheck()
     func getSerchedComputers(computerName: String?)
     var computers: Computers? { get set }
     var page: Int { get set }
@@ -67,5 +69,12 @@ class MainPresenter: MainViewPresenterProtocol {
                 }
             }
         }
+    }
+    
+    func conectionCheck() {
+            if ReachabilityService.isConnectedToNetwork() == true {
+            } else {
+                self.view?.notConnection()
+            }
     }
 }

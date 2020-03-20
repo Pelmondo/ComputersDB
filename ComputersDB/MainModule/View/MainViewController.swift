@@ -33,6 +33,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.conectionCheck()
         view.backgroundColor = .white
         navigationItem.title = "Computers"
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -87,6 +88,13 @@ extension MainViewController: MainViewProtocol {
     
     func failure(_ error: Error) {
         print(error.localizedDescription)
+    }
+    
+    func notConnection() {
+        let alert = UIAlertController(title: nil, message: "Internet connections failed!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+        }))
+        self.present(alert,animated: true, completion: nil)
     }
 }
 
